@@ -9,6 +9,10 @@ SongManager = {
       if (err) console.log(err.reason);
     });
   },
+  init: function(songId) {
+    this.setSongId(songId);
+    Meteor.subscribe('song', songId);
+  },
   // reactive cursor
   getSongCursor: function(){
     return Songs.find({_id: this.getSongId()});
