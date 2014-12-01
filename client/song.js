@@ -1,0 +1,4 @@
+
+Template.song.rendered = function(){
+  
+}
