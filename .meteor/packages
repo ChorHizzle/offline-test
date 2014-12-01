@@ -6,7 +6,5 @@
 meteor-platform
 autopublish
 insecure
-appcache
 iron:router
 ground:db
-
