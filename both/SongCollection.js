@@ -18,9 +18,4 @@ Meteor.methods({
       $push: {notes: note},
     });
   },
-  // updateNotes: function(song){
-  //   Songs.update(song._id, {
-  //     $set: {notes: song.notes},
-  //   });
-  // },
 });

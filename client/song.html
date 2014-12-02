@@ -1,3 +1,22 @@
 <template name='song'>
-{{> home}}
+  <button class='chord' data-num='60'>C</button>
+  <button class='chord' data-num='62'>D</button>
+  <button class='chord' data-num='64'>E</button>
+  <button class='chord' data-num='65'>F</button>
+  <button class='chord' data-num='67'>G</button>
+
+  <div>
+    <button id='new-song'>New song</button>
+  </div>
+
+  {{#with song}}
+    {{#each notes}}
+      <span>
+        {{this}}
+      </span>
+    {{/each}}
+  {{/with}}
+
+  <a href="/">Back</a>
+
 </template>
